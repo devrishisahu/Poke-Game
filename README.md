@@ -1,16 +1,48 @@
-# React + Vite
+# Poke Game 🎮⚡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun Pokémon guessing game built with React and Vite. The app fetches random Pokémon data from the PokeAPI and challenges the player to guess the correct Pokémon from multiple options.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Random Pokémon quiz gameplay
+- Pokémon image fetched from PokeAPI
+- Multiple-choice answer options
+- Score system
+- Life system with 3 chances
+- Winner screen when score reaches 100
+- Game over screen when lives reach 0
+- Confetti celebration on winning
+- Clean UI built with Tailwind CSS
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
+- Context API
+- PokeAPI
+- React Confetti
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+Poke-Game/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── AnswerCard.jsx
+│   │   ├── LoserCard.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── PokeCard.jsx
+│   │   ├── ScoreBoard.jsx
+│   │   └── WinnerCard.jsx
+│   ├── context/
+│   │   ├── PokeContext.jsx
+│   │   ├── PokeReducer.jsx
+│   │   └── PokeService.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── package.json
+└── vite.config.js
